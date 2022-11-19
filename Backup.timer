@@ -1,0 +1,11 @@
+[Unit]
+Description=Backup Timer
+
+[Timer]
+OnCalendar=Friday *-*-* 01:00:00
+AccuracySec=1h
+Unit=Backup.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target

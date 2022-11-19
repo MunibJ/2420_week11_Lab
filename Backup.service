@@ -1,0 +1,9 @@
+[Unit]
+Description=use rsync to backup the choosen directory to a backup server, specified in a config.sh file, directory will be saved in ~/ 
+
+[Service]
+Type=oneshot
+ExecStart=/opt/Services/Backup.sh
+
+[Install]
+WantedBy=multi-user.target

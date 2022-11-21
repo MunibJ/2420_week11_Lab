@@ -10,6 +10,10 @@
   + *A01320713*
 
 
+## Directory Overview
+![image_directory_overview](images/directory_overview.png)
+
+
 ## Weather Service
 
 Provide current ***weather information with location specified*** and store the results into file that can be opened and viewed
@@ -70,6 +74,12 @@ Backup service operates ***every Friday at 01:00*** to the desitination of a bac
   ```bash
   systemctl status backup.service
   ```
+    + Check following *criteria*  
+      | Title       | Description  |
+      | ----------- | ------------ |
+      | Loaded      | loaded       |
+      | Active      | inactive     |
+      | TriggeredBy | backup.timer |
 
 ### backup.timer
 
@@ -89,6 +99,13 @@ Backup service operates ***every Friday at 01:00*** to the desitination of a bac
   ```bash
   systemcl status backup.service
   ```
+    + Check following *criteria*  
+    | Title       | Description   |
+    | ----------- | ------------- |
+    | Loaded      | loaded        |
+    | Active      | active        |
+    | Triggers    | backup.service|
+      
 
 ### config.sh
 

@@ -74,12 +74,12 @@ Backup service operates ***every Friday at 01:00*** to the desitination of a bac
   ```bash
   systemctl status backup.service
   ```
-    + Check following *criteria*  
-      | Title       | Description  |
-      | ----------- | ------------ |
-      | Loaded      | loaded       |
-      | Active      | inactive     |
-      | TriggeredBy | backup.timer |
+  Check following *criteria*  
+  | Title       | Description  |
+  | ----------- | ------------ |
+  | Loaded      | loaded       |
+  | Active      | inactive     |
+  | TriggeredBy | backup.timer |
 
 ### backup.timer
 
@@ -99,12 +99,12 @@ Backup service operates ***every Friday at 01:00*** to the desitination of a bac
   ```bash
   systemcl status backup.service
   ```
-    + Check following *criteria*  
-    | Title       | Description   |
-    | ----------- | ------------- |
-    | Loaded      | loaded        |
-    | Active      | active        |
-    | Triggers    | backup.service|
+  Check following *criteria*  
+  | Title       | Description   |
+  | ----------- | ------------- |
+  | Loaded      | loaded        |
+  | Active      | active        |
+  | Triggers    | backup.service|
       
 
 ### config.sh
